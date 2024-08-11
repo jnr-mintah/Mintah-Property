@@ -1,0 +1,139 @@
+nav {
+  width: 80%;
+  height: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 11px 28px -3px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: 0px 11px 28px -3px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 0px 11px 28px -3px rgba(0, 0, 0, 0.69);
+  background-color: #29282815;
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  position: fixed;
+  top: 5vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+
+}
+
+.logo {
+  width: 8rem;
+  height: 100%;
+}
+
+.logo img {
+  width: 8rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  color: white;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+li {
+  font-size: medium;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(214, 214, 214);
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+li:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+button {
+  background: none;
+  color: rgb(214, 214, 214);
+  font-size: 16px;
+}
+
+.search-icon, .bar-icon, .close-icon {
+  transition: 0.2s ease;
+}
+
+.search1-icon{
+    
+}
+
+.search-icon:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+
+.inputs, .inputs1{
+    width: 12rem;
+    height: 2rem;
+    outline: none;
+    border-radius: 5px;
+    background-color: #29282869;
+    color: rgb(214, 214, 214);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-indent: 10px;
+}
+
+.inputs::placeholder{
+    color: rgba(255, 255, 255, 0.267)
+}
+
+.sidebar{
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.69);
+    backdrop-filter: blur(30px);
+    height: 50vh;
+    gap: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.bar-button{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .inputs{
+        display: none;
+    }
+
+    .search-icon{
+        display: none;
+    }
+    
+    .inputs1{
+        width: 100%;
+    }
+
+   .lost{
+    display: none;
+   }
+
+   .bar-button{
+    display: flex;
+   }
+
+   nav{
+    width: 90%;
+   }
+}
