@@ -1,0 +1,185 @@
+.main1 {
+  padding-top: 15rem;
+  width: 100%;
+  height: fit-content;
+  /* border: 2px solid white; */
+  color: wheat;
+  background-color: rgb(7, 7, 7);
+  font-family: "Ubuntu";
+  color: white;
+  /* border: 2px solid red; */
+}
+
+.main-container {
+  width: 75%;
+  height: fit-content;
+  background-color: black;
+  display: flex;
+  align-items: end;
+  justify-content: flex-start;
+  padding: 2rem;
+  margin-top: 2rem;
+  flex-direction: column;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 7px 0px 16px 0px #000000bf;
+  -webkit-box-shadow: 7px 0px 10px 0px #141414bf;
+  -moz-box-shadow: 7px 0px 16px 0px #928787bf;
+}
+
+.main1 h1 {
+  text-align: center;
+  font-family: "Ubuntu";
+  color: rgb(94, 91, 91);
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+
+.slider-container {
+  max-width: 600px;
+  margin-left: auto; 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  align-self: self-end;
+}
+
+.logo-section {
+  margin-bottom: 20px;
+}
+
+.slider{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.logo-section img {
+  max-width: 150px;
+}
+
+.slider-slides {
+  display: flex;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.slider-slide {
+  min-width: 100%;
+  transition: transform 0.5s ease;
+  opacity: 0;
+}
+
+.slider-slide.active {
+  opacity: 1;
+}
+
+.slider-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.circle-button {
+  background-color: #f9dc52;
+  outline: none;
+  border: none;
+  margin-top: 1rem;
+  font-size: 14px;
+  font-family: "ubuntu";
+  color: rgba(0, 0, 0, 0.616);
+  font-weight: bolder;
+  border: none;
+  width: 7rem;
+  box-shadow: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.slider-button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  /* margin: 0 10px; */
+  z-index: 1;
+  /* background-color: #f9dc52; */
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  transition: 0.2s ease;
+  font-weight: bolder;
+}
+
+
+.slider-button:hover {
+  color: white;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 5px;
+  background-color: #f9dd522f;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #f9dc52;
+}
+
+.blank{
+    width: 100%;
+    height: 10rem;
+    background-color: rgb(7, 7, 7);
+}
+
+
+@media (max-width: 768px){
+    .main1{
+        padding-top: 20rem;
+    }
+
+    .main-container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 497px) {
+    .slider{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-container{
+        flex-direction: column;
+        display: flex;
+    }
+
+    .slider-container p{
+        text-align: justify;
+    }
+
+    .slider-container{
+        flex-direction: column;
+        /* text-align: justify; */
+    }
+
+}

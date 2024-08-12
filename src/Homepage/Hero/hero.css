@@ -30,7 +30,7 @@ header {
     outline: none;
     border: none;
     margin-top: 1rem;
-    font-size: 1.1rem;
+    font-size: 14px;
     font-family: 'ubuntu';
     color: rgba(0, 0, 0, 0.616);
     font-weight: bolder;
@@ -38,6 +38,7 @@ header {
     box-shadow: none;
     padding: 5px;
     border-radius: 5px;
+    text-transform: uppercase;
 }
 
 
