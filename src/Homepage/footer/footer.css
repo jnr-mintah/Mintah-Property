@@ -9,6 +9,7 @@
 .foot-width{
     width: 80%;
     height: 100%;
+    flex-wrap: wrap;
     /* border: 2px solid red ; */
     margin: auto;
     display: flex;
@@ -70,6 +71,7 @@
     height: 100%;
     flex-direction: column;    
     padding: 0;
+    text-align: center;
 }
 
 .link1 a{
@@ -78,7 +80,56 @@
     font-weight: 500;
 }
 
+.last{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(201, 197, 197);
+    padding: 2rem;
+    gap: 2rem;
+}
+
+hr{
+    width: 80%;
+    border: 2px solid rgba(0, 0, 0, 0.445);
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.footer-copyright{
+    font-family: "Ubuntu";
+    font-size: 14px;
+    text-align: center;
+
+}
+
+
+
 @media (max-width: 768px){
+
+    .foot{
+        height: fit-content;
+        padding-bottom: 1rem;
+    }
+
+    .foot-width{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .link1{
+        border: 2px solid white;
+        width: 50%;
+    }
+
+    .socials{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
     .socials img{
         width: calc(100% / 2);    
 

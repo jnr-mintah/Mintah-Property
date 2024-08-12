@@ -143,6 +143,13 @@ function Footer() {
           </div>
         </div>
       </div>
+      <div className="last">
+        <div class="footer-copyright">
+        <hr />
+
+          <p>&copy; 2024 Mintah Property. All rights reserved.</p>
+        </div>
+      </div>
     </>
   );
 }
